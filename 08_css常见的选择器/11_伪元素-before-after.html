@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box::before {
+            content: "这应该显示在其他内容之前。";
+            color: red;
+            font-weight: bold;
+        }
+        .box::after {
+            /*content: "这应该显示在其他内容之后。";*/
+            content: " ➥";
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+ 我是主要内容
+</div>
+</body>
+</html>
