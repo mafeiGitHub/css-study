@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+  <script>
+    function showDetails(animal) {
+      var animalType = animal.getAttribute("data-animal-type");
+      alert(animal.innerHTML + "是一种" + animalType + "。");
+    }
+  </script>
+</head>
+<body>
+<p>点击某个物种来查看其类别：</p>
+
+<ul>
+  <li onclick="showDetails(this)" id="owl" data-animal-type="人">女人</li>
+  <li onclick="showDetails(this)" id="salmon" data-animal-type="鱼类">食人鱼</li>
+  <li onclick="showDetails(this)" id="tarantula" data-animal-type="家禽">小鸡鸡</li>
+</ul>
+</body>
+</html>
+
