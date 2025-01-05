@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul,li{
+            padding: 0;
+            margin: 0;
+        }
+        .item{
+            list-style: none;
+            margin: 10px 0;
+
+        }
+
+        .item>a{
+            list-style: none;
+            text-decoration: none;
+            color: #333333;
+
+        }
+        .title:hover{
+            color: red;
+
+        }
+        ul>li:nth-child(1) .ranking{
+            color: red;
+        }
+        ul>li:nth-child(2) .ranking{
+            color: green;
+        }
+        ul>li:nth-child(3) .ranking{
+            color: blue;
+        }
+        .title{
+            display: inline-block;
+            align-items: center;
+            padding: 6px 0;
+            cursor: pointer;
+            font-size: 16px;
+            color: #222222;
+        }
+        .ranking{
+            font-family: PingFang SC,serif;
+            font-weight: 500;
+            color: #a1a3a6;
+            font-size: 16px;
+        }
+        .icon{
+            position: relative;
+            top: 3px;
+            display: inline-block;
+
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            margin-left: 6px;
+            background-size: contain;
+        }
+        .hot{
+            background-image: url("./img/icon.svg");
+        }
+        .new{
+            background-image: url("./img/new.png");
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li class="item">
+        <a href="#">
+            <span class="ranking">1</span>
+            <div class="title">天安门元旦升旗仪式完整版来了</div>
+            <i class="icon"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a href="#">
+            <span class="ranking">2</span>
+            <div class="title">天安门元旦升旗仪式完整版来了</div>
+            <i class="icon"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a href="#">
+            <span class="ranking">3</span>
+            <div class="title">天安门元旦升旗仪式完整版来了</div>
+            <i class="icon new"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a href="#">
+            <span class="ranking">4</span>
+            <div class="title">天安门元旦升旗仪式完整版来了</div>
+            <i class="icon hot"></i>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
